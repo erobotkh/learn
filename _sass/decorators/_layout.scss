@@ -1,0 +1,29 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid $border-color-01;
+  min-height: $spacing-unit * 1.865;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+  }
+
+  img {
+    width: 28px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    padding: 4px;
+    border-radius: 1px;
+    background-color: white;
+    border: 1px solid $border-color-01;
+  }
+}
