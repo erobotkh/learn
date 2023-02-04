@@ -27,3 +27,8 @@
     content: "·ㅤ · ㅤ·";
   }
 }
+
+img {
+  border-radius: $border-radius;
+  border: 1px solid $border-color-01;
+}
