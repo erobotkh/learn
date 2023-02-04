@@ -4,7 +4,7 @@ title: List, Set, Map
 date: 2023-02-05 00:26:33 +0700
 modified_date:
 categories: dart
-permalink:
+permalink: /dart/flutter-map-set-list
 tags:
 - Map
 - List

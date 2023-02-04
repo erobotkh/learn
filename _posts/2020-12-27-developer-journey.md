@@ -4,7 +4,7 @@ title: Developer Journey at E-Robot
 date: 2020-12-27
 modified_date: 2023-02-05
 categories: blogs
-permalink:
+permalink: blogs/developer-journey
 tags:
 author:
 - Thea Choem
