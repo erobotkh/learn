@@ -6,7 +6,7 @@
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
-      <img src="/assets/vectors/logo.svg" alt="E-Robot logo" />
+      <img src="{{ '/assets/vectors/logo.svg' | relative_url }}" alt="E-Robot logo" />
       {{ site.title | escape }}
     </a>
 
