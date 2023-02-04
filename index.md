@@ -16,6 +16,7 @@ layout: home
     {%- endfor %}
   </select>
 </div>
+<br>
 
 <script>
   document.getElementById("skin-switch-container").style.display = "block";

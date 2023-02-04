@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Reference: 
+# https://github.com/jekyll/minima/blob/demo-site/_plugins/skin_manager.rb
 module MinimaDemo
   class << self
     attr_accessor :available_skins
