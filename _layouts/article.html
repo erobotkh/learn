@@ -49,9 +49,14 @@ layout: default
     {%- endif -%}
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <section class="article-content-container">
+    <nav class="article-sidebar">
+      {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc-menu" skip_no_ids=true %}
+    </nav>
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </section>
 
   {%- if site.disqus.shortname -%}
   {%- include disqus_comments.html -%}
