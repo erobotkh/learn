@@ -1,6 +1,6 @@
 ---
 layout: article
-title: List, Set, Map
+title: Flutter List, Set, Map
 date: 2023-02-05 00:26:33 +0700
 modified_date:
 categories: dart
@@ -77,7 +77,7 @@ void main() {
 }
 ```
 
-## 2. List
+## 2. Set
 ```dart
 void main() {
   List<int> ids = [1, 2, 2, 3, 3, 3, 4, 5, 5, 6, 7];
