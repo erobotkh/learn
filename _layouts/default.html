@@ -2,9 +2,9 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {%- include head.html -%}
 
-<body class="d-none">
+<body class="d-none m-scene">
   {%- include header.html -%}
-  <main class="page-content" aria-label="Content">
+  <main class="page-content scene_element scene_element--fadein" aria-label="Content">
     <div class="wrapper">
       {{ content }}
     </div>
@@ -13,6 +13,7 @@
 </body>
 
 {% assign scripts = site.default_scripts | concatArray: page.scripts %}
+
 {% for script in scripts %}
 {% assign script_path = 'assets/javascripts/' | append: script %}
 <script src="{{ script_path | relative_url }}"></script>
