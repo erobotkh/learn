@@ -1,6 +1,9 @@
 @charset "utf-8";
+
 @import "decorators/layout";
-@import "custom/spacing.scss";
+@import "custom/spacing";
+@import "custom/icons";
+@import "custom/display";
 
 .post-tags-wrapper {
   margin-left: -2px;

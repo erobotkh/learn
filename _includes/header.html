@@ -8,6 +8,7 @@
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
       <img src="{{ '/assets/vectors/logo.svg' | relative_url }}" alt="E-Robot logo" />
       {{ site.title | escape }}
+      {%- include theme-switcher.html -%}
     </a>
 
     {%- if titles_size > 0 -%}

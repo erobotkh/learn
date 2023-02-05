@@ -22,6 +22,9 @@ minima:
 header_pages:
   # - about.md
 
+default_scripts:
+  - skin_switcher.js
+
 show_excerpts: false
 
 exclude:
