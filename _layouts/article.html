@@ -60,3 +60,7 @@ layout: default
   <div id="post-comments"></div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{% contentfor script_after %}
+<script src="{{ 'assets/javascripts/post_comments.js' | relative_url }}"></script>
+{% endcontentfor %}

@@ -1,8 +1,10 @@
 const PostComments = {
   selectorId: "post-comments",
   init: function () {
+    self = this;
+
     SkinSwitcher.addSkinChangesListener(function (isDarkMode, solarized) {
-      this.setTheme(isDarkMode, solarized);
+      self.setTheme(isDarkMode, solarized);
     });
 
     this.setTheme(SkinSwitcher.isDarkMode(), SkinSwitcher.isSolarized());
@@ -14,8 +16,8 @@ const PostComments = {
       return solarized ? "boxy-light" : "github-light";
     }
   },
-  setTheme: function (isDarkMode) {
-    let theme = this.constructTheme(isDarkMode);
+  setTheme: function (isDarkMode, solarized) {
+    let theme = this.constructTheme(isDarkMode, solarized);
 
     let script = document.createElement("script");
     script.src = "https://utteranc.es/client.js";
