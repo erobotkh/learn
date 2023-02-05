@@ -11,10 +11,19 @@
   position: relative;
 }
 
-.site-title {
-  &:hover {
-    text-decoration: none;
-    color: $link-hover-color;
+.site-title-container {
+  float: left;
+
+  @include media-query($on-palm) {
+    padding: 0px;
+  }
+
+  .site-title {
+    float: none;
+    &:hover {
+      text-decoration: none;
+      color: $link-hover-color;
+    }
   }
 
   img {

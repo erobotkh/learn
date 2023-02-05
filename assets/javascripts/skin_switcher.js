@@ -31,15 +31,16 @@ const SkinSwitcher = {
         }
       }
     }
-
-    document.body.classList.remove("d-none");
   },
   replaceStyleSheetWith: function (skin) {
     var metaTag = document.getElementById("stylesheet");
     var SSHref = metaTag.href;
     var SSName = SSHref.substring(SSHref.lastIndexOf("/") + 1);
+    var stylesheetUrl = SSHref.replace(SSName, skin);
 
-    metaTag.href = SSHref.replace(SSName, skin);
+    fetch(stylesheetUrl).then(function (_) {
+      if (metaTag.href != stylesheetUrl) metaTag.href = stylesheetUrl;
+    });
   },
   setThemeSwitcherContent: function (isDarkMode, solarized) {
     element = document.getElementById(this.selectorId);
