@@ -1,8 +1,12 @@
 const SkinSwitcher = {
   selectorId: "theme-mode-switch-container",
+  _callbacks: [],
   init: function () {
     this.listenToSystemTheme();
     this.initializeTheme();
+  },
+  addSkinChangesListener: function (handler) {
+    this._callbacks.push(handler);
   },
   listenToSystemTheme: function () {
     window
@@ -61,6 +65,10 @@ const SkinSwitcher = {
 
     localStorage.setItem("storage-dark-mode", isDarkMode);
     localStorage.setItem("storage-solarized", solarized);
+
+    this._callbacks.forEach(function (hanlder) {
+      hanlder(isDarkMode, solarized);
+    });
   },
   isSolarized: function () {
     solarized = document

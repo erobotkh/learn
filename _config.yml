@@ -24,6 +24,7 @@ header_pages:
 
 default_scripts:
   - skin_switcher.js
+  - post_comments.js
 
 show_excerpts: false
 
