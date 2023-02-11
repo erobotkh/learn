@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Flutter List, Set, Map
+title: List, Set, Map in Dart Lang
 date: 2023-02-05 00:26:33 +0700
 modified_date:
 categories: dart
-permalink: /dart/flutter-map-set-list
+permalink: /dart/map-set-list-with-dart
 tags:
 - Map
 - List
